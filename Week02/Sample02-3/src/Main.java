@@ -15,6 +15,7 @@ void main() {
     height = keyboard.nextDouble();
     System.out.printf("%s님의 몸무게(예 78.6) ? ", name);
     weight = keyboard.nextFloat();
+    System.out.printf("%s님의 성별은?", name);
 
     System.out.printf("\n%s님의 나이는 %d살 입니다.\n", name, age);
     System.out.printf("%s님의 키는 %.1f Cm 입니다.\n", name, height);

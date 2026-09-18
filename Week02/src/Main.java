@@ -1,16 +1,21 @@
 
 void main() {
     Scanner keyboard = new Scanner(System.in);
-    int radius;
+    int base;
+    int 사걱형면적;
+    double radius;
     double 원의면적;
+    final double PI = 3.141592;
+    double area;
 
-    System.out.print("원의 반지름 입력(장수형) ? ");
-    radius = keyboard.nextInt();
+    System.out.print("정사각형 한변의 길이 입력(예 5) ");
+    base = keyboard.nextInt();
+    사걱형면적 = base * base;
+    redius = base / 2.0;
+    원의 면적 = PI * radius * radius;
+    area = 사각형면적 - 원의면적;
 
-    원의면적 = 3.141592 * radius * radius;
-
-    System.out.printf("원의 반지름 : %,d Cm, 원의 면적 : %,.2f \u33a0\n", radius, 원의면적);
-
-
-
+    System.out.printf("한 변의 길이가 %,d Cm인 정사각형의 면적은 %,d\u33a0\n", base, 사각형면적);
+    System.out.printf("반지름이 %,.2f Cm인 원의 면적은 %,.2f \u33a0\n",radius,원의면적);
+    System.out.printf("구하는 면적 : %,.2f \u33a0\n", area);
 }
